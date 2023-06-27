@@ -95,9 +95,3 @@ channel.send({
   baz: 'hello there',
 });
 ```
-
-## Note
-
-The EventEmitter is typesafe. If you want a non-typesafe eventemitter, either pass `<any>` or use NodeEventEmitter.
-
-Note that typesafety is not available in pure JS.
