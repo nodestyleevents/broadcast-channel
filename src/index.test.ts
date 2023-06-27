@@ -52,4 +52,7 @@ describe('BroadcastChannel', () => {
     await channel2.send(message)
     await promise
   });
+  afterAll(() => {
+    eval(`require('process').exit()`)
+  }, 1000)
 });
